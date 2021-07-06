@@ -1,2 +1,2 @@
 # ResponsiveWebDesign
-This repo contains practice projects and exercises towards the completion of Responsive web design certification as part of Freecodecamp curriculum.
+This repository contains practice projects and exercises towards the completion of Responsive Web design Certification as part of the Freecodecamp curriculum.
