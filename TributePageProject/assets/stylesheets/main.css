@@ -25,3 +25,38 @@ h1, h2, h3, p
 {
 	margin-bottom: 22px;
 }
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+.group:before,
+.group:after{
+	content:"";
+	display: table;
+}
+.group:after{
+	clear: both;	
+}
+.group{
+	clear: both;
+	*zoom: 1;
+}	
+
+/*
+  ========================================
+  Images
+  ========================================
+*/	
+
+.thumbnail{
+	float: left;
+    margin-right: 1.5%;	
+	padding: 10px 10px;
+	border: 1px solid #56562B;
+	width: 242px;
+}
+
+}
+
