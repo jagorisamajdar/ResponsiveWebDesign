@@ -1,0 +1,26 @@
+
+.navigation{
+	font: bold 11px Arial;
+	margin: 12px;
+	padding: 0;
+	text-transform: uppercase;
+}
+.navigation li{
+	display: inline-block;	
+}
+
+.navigation a{
+	padding: 12px 20px;
+	background: #293f50;
+	background: linear-gradient(#324c61,#436783);
+	color: #FFD966;
+	border-right: 1px solid rgba(0,0,0,0.3);
+}
+
+.navigation li:first-child a{
+	border-radius: 5px 0 0 5px;
+}
+
+.navigation li:last-child a{
+	border-radius: 0 5px 5px 0;
+}
