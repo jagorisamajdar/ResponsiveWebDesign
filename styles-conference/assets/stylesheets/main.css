@@ -253,3 +253,16 @@ h4{
 	float: left;
 	font-weight: 400;
 }
+
+/*
+  ========================================
+  Speakers
+  ========================================
+*/
+.speaker-info{
+  border: 1px solid #dfe2e5;
+  border-radius: 5px;
+  margin-top: 88px;
+  padding: 22px 0;
+  text-align: center;
+}
