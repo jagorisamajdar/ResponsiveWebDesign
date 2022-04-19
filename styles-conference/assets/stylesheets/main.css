@@ -212,6 +212,14 @@ h4{
 .nav{
 	text-align: right;
 }
+.nav li{
+	display: inline-block;
+	margin: 0 8px;
+	vertical-align: top;
+}
+.nav li:last-child {
+  margin-right: 0;
+}
 /*
   ========================================
   Logo
