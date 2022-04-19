@@ -220,6 +220,13 @@ h4{
 .nav li:last-child {
   margin-right: 0;
 }
+
+.teaser img{
+	display:block;
+	border-radius: 5px;
+	max-width: 100%;
+	margin-bottom: 22px;
+}
 /*
   ========================================
   Logo
@@ -263,8 +270,15 @@ h4{
   border: 1px solid #dfe2e5;
   border-radius: 5px;
   margin-top: 88px;
-  padding: 22px 0;
+  padding-bottom: 22px;
   text-align: center;
+}
+.speaker-info img{
+	border-radius: 50%;
+	vertical-align: top;
+	height: 130px;
+	margin: -66px 0 22px 0;
+	
 }
 .speaker{
 	margin-bottom: 44px;
