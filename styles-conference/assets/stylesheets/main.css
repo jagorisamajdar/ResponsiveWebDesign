@@ -304,10 +304,6 @@ h4{
 	margin: 0 0 22px 30px;
 }
 
-.user-info{
-	padding-left: 20px;
-	padding-right: 20px;
-}
 .user-info label{
   display: block;
   color: #648880;
@@ -315,25 +311,29 @@ h4{
   font-weight: 400;
   margin-bottom: 20px;
 }
+.user-info input,.user-info textarea{width: 100%;}
 
-input,
-select,
-textarea{
+.user-info input,
+.user-info select,
+.user-info textarea{
   font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   border: 1px solid #c6c9cc;
   border-radius: 5px;
   color: #888;
   display: block;
   margin-top:  10px;
-  padding: 10px 10px;
+  padding: 5px 10px;
   
 }
 
+.user-info select{
+	height: 34px;
+}
 .btn-default {
   border: 0;
   background: #648880;
-  padding: 10px 20px;
-  font-size: 14px;
+  padding: 11px 30px;
+  font-size: 12px;
 }
 .btn-default:hover {
   background: #77a198;
