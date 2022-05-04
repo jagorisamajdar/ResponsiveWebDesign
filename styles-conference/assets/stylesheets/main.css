@@ -8,8 +8,6 @@ body{
 	color: #888;
 	font:  300 16px/22px "Lato","Open Sans", "Helvetica Neue",Helvetica, Arial, sans-serif;
 }
-
-
 strong{
 	font-weight: 400;
 }
@@ -294,4 +292,49 @@ h4{
 }
 .venue-hotel{
 	margin-bottom: 22px;
+}
+
+/*
+  ========================================
+  Register
+  ========================================
+*/
+.why-attend{
+	list-style: square;
+	margin: 0 0 22px 30px;
+}
+
+.user-info{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.user-info label{
+  display: block;
+  color: #648880;
+  cursor: pointer;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+input,
+select,
+textarea{
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border: 1px solid #c6c9cc;
+  border-radius: 5px;
+  color: #888;
+  display: block;
+  margin-top:  10px;
+  padding: 10px 10px;
+  
+}
+
+.btn-default {
+  border: 0;
+  background: #648880;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+.btn-default:hover {
+  background: #77a198;
 }
