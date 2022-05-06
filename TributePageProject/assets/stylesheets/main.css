@@ -1,130 +1,122 @@
-/*
-  ========================================
-  Custom styles
-  ========================================
-*/
-body{
-	color: #777778;
-	font: 300 16px/22px  'Roboto', Arial, sans-serif;
-}
-
-/*
-  ========================================
-  Grid
-  ========================================
-*/
-*{
+/***************
+ Grid
+ ****************/
+ 
+*,
+*:before,
+*:after{
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
 .container{
+	width: 1000px;
 	margin: 0 auto;
 	padding-left: 30px;
 	padding-right: 30px;
-	width: 1000px;
 }
 
-/*
-  ========================================
-  Typography
-  ========================================
-*/
-h1, h2, h3, p
-{
-	margin-bottom: 22px;
+/***************
+ Typography
+ ****************/
+ 
+body{
+	background: #8aa7bd;
+	color: #45535e;
+	font: 300 16px/22px arial,sans-serif;
 }
-h1, h2, h3 {
-  color: #648880;
-}
+
+h3,p{margin-bottom: 20px;}
 
 h1{
-	font-size: 3.5rem;
-	line-height: 4rem;
-	font-weight: 500;
-	text-align: center;
-	color: white;
+	margin-top: 15px;
+	font-size: 36px;
+	line-height: 50px;
+	float:left;
+	color: #4f453d;
+	font-family: 'Noto Sans','Roboto',arial,sans-serif;
 }
 
 h2{
-	font-size: 2.25rem;
-	line-height: 2.75rem;
-	font-weight: 400;
-	font-family:'Noto Sans','Roboto',Arial,sans-serif;
-	text-align: center;
-	color: #3c4043;
-	margin-top: 22px;
-	
+	font-size: 24px;
+	text-align:center;
+	text-shadow:1px 1px 6px rgba(0,0,0,0.3);
+	margin-top: 20px;
+	margin-bottom: 10px;
 }
+
 h3{
-	font-size: 1rem;
-	font-weight: 400;
-	font-family: 'Roboto',Arial,sans-serif;
-	text-align: center;
-	letter-spacing: .00625rem;
-	color: #572F03;
-		
+	font-size: 16px;
+	letter-spacing: -0.5px;
+	text-align:center;
 }
-/*
-  ========================================
-  Clearfix
-  ========================================
-*/
-.group:before,
-.group:after{
-	content:"";
-	display: table;
-}
-.group:after{
-	clear: both;	
-}
-.group{
-	clear: both;
-	*zoom: 1;
-}	
-
-/*
-  ========================================
-  Images
-  ========================================
-*/	
-
-.thumbnail{
-	float: left;
-    margin-right: 1.5%;	
-	padding: 10px 10px;
-	border: 1px solid #56562B;
-	width: 242px;
-	
-}
-.data-image{
-	width: 100%;
-	height: 500px;
-	background: url("../images/background.png");
-	background-size: 100% 100%;
-	
-}
-
-/*
-  ========================================
-  Primary header
-  ========================================
-*/	
 
 header h2{
-	font-size: 1rem;
-	font-weight: 400;
-	line-height: 1.5rem;
-	letter-spacing: .00625rem;
-	font-family: 'Roboto',Arial,sans-serif;
-	color: white;
+	margin-top: 32px;
+	font-size:16px;
+	text-align: right;
+	color:#4f453d;
+	text-shadow:none;
+	font-family: 'Noto Sans','Roboto',arial,sans-serif;
+	font-weight: 500;
 }
-/*
-  ========================================
-  Border
-  ========================================
-*/	
-.borderbottom{
-	border-bottom: 2px dotted;
-}
+.varma-img p{font-size: 13px;}
+/***************
+ Clearfix
+ ****************/
+ 
+ .group:before,
+ .group:after{
+	 content:"";
+	 display: table;
+ }
+ .group:after{
+	 clear: both;
+ }
+ .group{
+	 clear: both;
+	 
+ }
+ 
+ /***************
+  Header
+ ****************/
+ 
+ .primary-header{
+	 background-image: url("../images/greentexture.png");
+	 background-repeat: repeat;
+	 opacity: 0.7;
+	 height:100px;
+ }
+ .row{
+	 min-width: 1000px;
+ }
+ 
+/***************
+  Images
+ ****************/ 
+ .varma-img{
+	 float: left;
+	 border: 2px solid gray;
+	 border-radius: 5px;
+	 width: 232px;
+	 text-align: center;
+ }
+ .varma-img img{
+	 border: 1px solid gray;
+	 display:inline-block;	 
+ }
+
+ /***************
+  Footer
+ ****************/
+ 
+ .primary-footer{
+	 padding-top:10px;
+	 background: #bd8aa7;
+	 color:#4f453d;
+	 font-family: 'Noto Sans',sans-serif;
+	 height:50px;
+	 font-size: 14px;
+ }
