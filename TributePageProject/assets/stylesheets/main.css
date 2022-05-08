@@ -24,7 +24,7 @@
 body{
 	background: #8aa7bd;
 	color: #45535e;
-	font: 300 16px/22px arial,sans-serif;
+	font: 300 16px/22px 'Times New Roman',arial;
 }
 
 h3,p{margin-bottom: 20px;}
