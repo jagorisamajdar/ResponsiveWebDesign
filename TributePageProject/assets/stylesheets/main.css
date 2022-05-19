@@ -1,26 +1,80 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
 /***************
  Grid
  ****************/
-*,
-*:before,
-*:after{
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	 box-sizing: border-box;
-} 
-
-.container{
-	width: 1000px;
+ *,
+ *:before,
+ *:after{
+	-webkit-box-sizing: border-box,
+	-moz-box-sizing: border-box,
+	box-sizing: border-box;	
+ }
+ 
+ .container{
 	margin: 0 auto;
-	padding-left: 30px;
-	padding-right: 30px;
+	padding: 10px 30px;
 }
 
-/***************
+@media all and (min-width:800px){
+	.container{
+	width:95%;
+	margin: 0 auto;
+	padding: 10px 30px;
+	}
+}
+ /***************
  Typography
  ****************/
- 
-body{
+ body{
 	background: #8aa7bd;
 	color: #45535e;
 	font: 300 16px/22px 'Times New Roman',arial;
@@ -29,18 +83,14 @@ body{
 h3,p{margin-bottom: 20px;}
 
 h1{
-	margin-top: 15px;
 	font-size: 36px;
 	line-height: 50px;
-	float:left;
 	color: #4f453d;
-	font-family: 'Noto Sans','Roboto',arial,sans-serif;
-	
+	font-family: 'Noto Sans','Roboto',arial,sans-serif;	
 }
 
 h2{
 	font-size: 24px;
-	text-align:center;
 	text-shadow:1px 1px 6px rgba(0,0,0,0.3);
 	margin-top: 20px;
 	margin-bottom: 10px;
@@ -48,97 +98,79 @@ h2{
 
 h3{
 	font-size: 16px;
-	letter-spacing: -0.5px;
-	text-align:center;
+	letter-spacing: -0.3px;
+	
 }
-
 header h2{
-	margin-top: 32px;
 	font-size:16px;
-	text-align: right;
 	color:#4f453d;
 	text-shadow:none;
 	font-family: 'Noto Sans','Roboto',arial,sans-serif;
-	font-weight: 500;
-	
+	font-weight: 500;		
 }
-.varma-img p{font-size: 14px;}
-.gallery p{font-size: 14px;}
+#img-caption{font-size: 14px;}
+
+@media all and (min-width:800px){
+	h1{float: left;}
+	header h2{text-align: right;}
+	h2,h3{text-align:center;}
+	.group:before,
+	.group:after{
+		content: "";
+		display: table;
+	}
+	.group{
+		clear: both;
+	}
+	.group:after{
+		clear: both;
+	}
+	.varma-img{
+	 float: left;
+	 border: 2px solid #7d7c78;
+	 border-radius: 5px;
+	 width: 19%;
+	 overflow: hidden;
+	 text-align: center;
+	 margin-right: 15px;
+	 vertical-align: top;	 
+   }
+   .gallery{
+	   display: flex;
+	   justify-content: space-between;
+   }
+   .img-container{
+	   width: 23%;
+	   
+   }
+}
 
 /***************
- Clearfix
- ****************/
- 
- .group:before,
- .group:after{
-	 content:"";
-	 display: table;
- }
- .group:after{
-	 clear: both;
- }
- .group{
-	 clear: both;	 
- }
- 
- /***************
   Header
  ****************/
  
  .primary-header{
-	 background-image: url("../images/greentexture.png");
-	 background-repeat: repeat;
-	 opacity: 0.7;
-	 height:100px;
- }
- .row{
-	 min-width: 1000px;
- }
- 
-/***************
-  Images
- ****************/ 
- .varma-img{
-	 float: left;
-	 border: 2px solid #7d7c78;
-	 border-radius: 5px;
-	 width: 230px;
-	 text-align: center;
-	 margin-right: 15px;
-	 vertical-align: top;
-	 
- }
- .varma-img img{
-	 border: 1px solid #fff;
-	 margin-top: 10px;
- }
-
- .gallery{
-	 display: flex;
-	 justify-content: space-between;
- }
- .img_container{
-	 width: 300px;
-	 height: 400px;
-	 overflow: hidden;
- }
- .img_container img{
-	 width: 200px;
-	 height: auto;
-	 border: 3px solid #fff;
-	 border-radius: 5px;
+	 background-image: url("https://upload.wikimedia.org/wikipedia/commons/1/17/1500x1500-abstract-dfg4007.jpg");
+	 background-repeat: round;	 
  }
  
  /***************
   Footer
  ****************/
- 
  .primary-footer{
-	 padding-top:10px;
+	 
 	 background: #bd8aa7;
 	 color:#4f453d;
-	 font-family: 'Noto Sans',sans-serif;
-	 height:50px;
+	 font-family: 'Noto Sans',sans-serif;	
 	 font-size: 14px;
  }
  
+ /***************
+  Images
+ ****************/
+ #image{
+	 max-width: 100%;
+	 height: auto;
+	 display:block;
+	 border: 1px solid #fff;	 
+ }
