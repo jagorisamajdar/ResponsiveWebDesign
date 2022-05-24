@@ -7,50 +7,80 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
 <body>
-		<header class="container">
-			<h1 id="title">Are you enagaged enough?</h1>
+		<header class="container primary-header">
+			<h1 id="title">Seniors Engagement Survey</h1>
+			<h2>Are you engaged enough?</h2>
 			<p id="description">We'd appreciate if you can spare few minutes and take this survey to let us know what motivates you.</p>		
-			<p>Thankyou</p>
+			<p>Thankyou</p>		
 		</header>
 		<main id="main">
 			<article class="container">
 				<form id="survey-form" method="post" action="#">
-				
+					
 					<fieldset class="user-info">
-					<label for="name">Name</label>
-					<input type="text" id="name" placeholder="Enter your name" required>
-					
-					<label for="email">Email</label>
-					<input type="email" id="email" placeholder="Enter your email" required>
-					
-					<label for="age">Age(optional)</label>
-					<input type="number" id="age" placeholder="Enter your age">
+					<ol>
+						<li>
+						<label for="name">Name</label>
+						<input type="text" id="name" placeholder="Enter your name" required>
+						</li>
+						<li>
+						<label for="email">Email</label>
+						<input type="email" id="email" placeholder="Enter your email" required>
+						</li>
+						<li>
+						<label for="age">Age(optional)</label>
+						<input type="number" id="age" placeholder="Enter your age" min="50" max="80">
+						</li>						
+					</ol>	
 					</fieldset>
 					
-					<fieldset class="user-activity">
+					<fieldset class="user-choices">
+					<ol start="4">
+						<li>
 						<p>Are you engaged in something meaningful?</p>
+						
 						<label>
 							<input type="radio" name="isengaged" id="is_engaged" value="yes" checked>Yes
+						<label>
+						<label>	
 							<input type="radio" name="isengaged" id="is_engaged" value="no">No
 						</label>	
 							
 						<label>If yes, then please specify <input type="text" name="specify_reason"></label>
+						</li>
 						
+						<li>
 						<p>Do you feel the activities in your community appeal to a diverse population of seniors?</p>
 						<label>
 							<input type="radio" name="isappealing" id="do_activities_appeal" value="yes" checked>Yes
+						</label>
+						<label>	
 							<input type="radio" name="isappealing" id="do_activities_appeal" value="no">No
 						</label>
+						</li>
 						
+						<li>
 						<p>Will you be more comfortable in a role that offers any/all of the below?</p>
+						<div class="flex-role-container">
 						<label>
 							<input type="checkbox" name="role"  value="time" >Convenient Time
+						</label>
+						<label>						
 							<input type="checkbox" name="role"  value="flexlocation" >Flexible Location/ Remote Option
+						</label>
+						<label>	
 							<input type="checkbox" name="role"  value="supportservice">Accessible health/ support services
+						</label>
+						<label>	
 							<input type="checkbox" name="role"  value="encouraged">Feel encouraged and valued
+						</label>
+						<label>
 							<input type="checkbox" name="role"  value="remuneration">Attractive remuneration
 						</label>
+						</div>
+						</li>
 						
+						<li>
 						<p>What are you engaged in currently?</p>
 						<select name="currentrole" required>
 							<option value="retirement">Retirement</option>
@@ -59,7 +89,9 @@
 							<option value="working">Working</option>
 							<option value="traveling">Traveling</option>
 						</select>
+						</li>
 						
+						<li>
 						<p>Which roles below motivate you the most</p>
 						<select name="dreamrole">
 							<option value="creativity">Creativity</option>
@@ -68,12 +100,14 @@
 							<option value="teaching">Teaching</option>
 							<option value="cooking">Cooking</option>
 							<option value="other">Others</option>
-						</select>
-						
+						</select>	
+						</li>
+					</ol>						
 					</fieldset>	
-				<p>End of Survey</p>
+				
 				<fieldset class="user-action">
-					<button name="send">Send</button>
+					<p>End of Survey</p>	
+					<button name="send" id="submit">Send Survey</button>
 				</fieldset>
 				</form>
 			</article>
