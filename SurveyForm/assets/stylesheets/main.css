@@ -17,8 +17,7 @@
 
 @media all and (min-width:530px){
 	.container{
-		width: 78%;
-		
+		width: 78%;		
 	}
 }
 
@@ -27,15 +26,14 @@ Form elements
 ********************/
 body{
 	background-color: #a0a0ff;
-	height: 100%;
+	font: 300 16px/22px "Times New Roman",arial; 
+	color:	#30304c;
 }
-main{
-	height: 70%;
-}
+
 form{
-	background-color: #ffa0a0;
+	background-color: #d0a0ff;
 	padding: 20px;
-	
+	margin: 10px;
 	
 }
 
@@ -43,6 +41,7 @@ label{
 	display: block;
 	margin-top: 10px;
 	margin-bottom: 10px;
+
 }
 #name,#email{
 	max-width: 100%;
@@ -88,11 +87,43 @@ label{
 	 margin-left: 20px;
 	 margin-right: 30px;
  }
+
+ /*******************
+Typography
+********************/
+
+h1{
+	font-size: 36px;
+	line-height: 44px;
+	font-family: 'Roboto','Times New Roman',arial;
+	letter-spacing: -0.5px;
+	
+}
+h2{
+	font-size: 24px;
+	line-height: 44px;
+	letter-spacing: -0.5px;	
+	font-family: 'Roboto','Times New Roman',arial;	
 }
 
-/**********************
-  HEader
-************************/
+.end-line{
+	font-size: 17px;
+	font-variant: small-caps;
+	font-weight: 600;
+}
+
+/*******************
+  Header
+********************/
 .primary-header{
-	height: 50%;
-}  
+	background-color: #a0d0ff;
+	text-align: center;
+}
+
+/*******************
+Images
+********************/
+
+#logo{
+	max-width:20%;
+}
