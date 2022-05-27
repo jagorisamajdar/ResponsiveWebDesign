@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title id="title">Seniors engagement survey</title>
+	<title>Seniors engagement survey</title>
 	<link rel="stylesheet" href="assets/stylesheets/reset.css">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="assets/stylesheets/main.css">
@@ -22,16 +22,16 @@
 					<fieldset class="user-info">
 					<ol>
 						<li>
-						<label for="name">Name</label>
-						<input type="text" id="name" placeholder="Enter your name" required>
+						<label for="name" id="name-label">Name</label>
+						<input type="text" id="name" placeholder="Enter your name" value= "" required>
 						</li>
 						<li>
-						<label for="email">Email</label>
+						<label for="email" id="email-label">Email</label>
 						<input type="email" id="email" placeholder="Enter your email" required>
 						</li>
 						<li>
-						<label for="age">Age(optional)</label>
-						<input type="number" id="age" placeholder="Enter your age" min="50" max="80">
+						<label for="number" id="number-label">Age(optional)</label>
+						<input type="number" id="number" placeholder="Enter your age" min="50" max="80">
 						</li>						
 					</ol>	
 					</fieldset>
@@ -48,7 +48,7 @@
 							<input type="radio" name="isengaged" id="is_engaged" value="no">No
 						</label>	
 							
-						<label>If yes, then please specify <input type="text" name="specify_reason"></label>
+						<p>If yes, then please specify what?</p><input type="text" id="reason" name="specify_reason">
 						</li>
 						
 						<li>
@@ -84,7 +84,7 @@
 						
 						<li>
 						<p>What are you engaged in currently?</p>
-						<select name="currentrole" required>
+						<select name="currentrole" id="dropdown" required>
 							<option value="retirement">Retirement</option>
 							<option value="caregiver">Caregiver</option>
 							<option value="retraining">Re-training</option>
@@ -104,12 +104,17 @@
 							<option value="other">Others</option>
 						</select>	
 						</li>
+						
+						<li>
+						<p>Additional comments</p>
+						<textarea id="comment" name="comments" rows="4" cols="50"></textarea>
+						</li>
 					</ol>						
 					</fieldset>	
 				
 				<fieldset class="user-action">
 					<p class="end-line">End of Survey</p>	
-					<button name="send" id="submit">Send Survey</button>
+					<button name="send" id="submit" class="button">Send Survey</button>
 				</fieldset>
 				</form>
 			</article>

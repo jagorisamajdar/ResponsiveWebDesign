@@ -34,7 +34,7 @@ form{
 	background-color: #d0a0ff;
 	padding: 20px;
 	margin: 10px;
-	
+	border-radius:5px;
 }
 
 label{
@@ -43,15 +43,36 @@ label{
 	margin-bottom: 10px;
 
 }
-#name,#email{
+.user-info label, .user-choices p{
+	font-weight: bold;
+}
+#name,#email,#reason{
 	max-width: 100%;
 	margin-bottom: 10px;
 	width:80%;
+	padding: 8px;
+	color: #272828;
+	border-radius: 5px;
+	border: 1px;
+	height: 30px;
+	background:#ececff;
+	font-family: "Times New Roman", arial;
+	font-size: 16px;
+	
 }
-#age{
+#number{
 	max-width: 100%;
 	margin-bottom: 10px;
-	width:20%;
+	padding: 8px;
+	width:50%;
+	color: #272828;
+	border-radius: 5px;
+	border: 1px;
+	height: 30px;
+	background:#ececff;
+	font-family: "Times New Roman", arial;
+	font-size: 16px;
+	
 }
 
 .user-choices p, .user-choices select, 
@@ -59,8 +80,21 @@ label{
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+.user-choices input{
+	font-family: "Times New Roman", arial;
+	font-size: 16px;
+	
+}
 .user-choices select{
 	width: 20%;
+	height:30px;
+    line-height:30px;
+    background:#ececff;
+	color: #272828;
+	border-radius:5px;
+	font-family: "Times New Roman", arial;
+	font-size: 16px;
+	
 }
 
 .flex-role-container{
@@ -73,9 +107,7 @@ label{
 	text-align: center;
 }
 
-.user-action button{
-	padding: 10px 20px;
- }
+
  .user-info ol{
 	 list-style-type: decimal;
  }
@@ -87,7 +119,16 @@ label{
 	 margin-left: 20px;
 	 margin-right: 30px;
  }
+ textarea{
+	 padding: 8px;
+	 color: #272828;
+	 border-radius: 5px;
+	 border: 1px;
+	 background:#ececff;
+	 font-family: "Times New Roman", arial;
+	 font-size: 16px;
 
+ }
  /*******************
 Typography
 ********************/
@@ -112,6 +153,7 @@ h2{
 	font-weight: 600;
 }
 
+
 /*******************
   Header
 ********************/
@@ -127,3 +169,23 @@ Images
 #logo{
 	max-width:20%;
 }
+
+/*****************
+ Button
+ ****************/
+ 
+ .button{
+	cursor: pointer;
+	background: linear-gradient(#ffecd9,#e5d4c3);
+	border-radius: 5px;
+	border: 0;
+	box-shadow: 0px 0px 2px 2px rgb(255,255,0);
+	padding:15px;
+    min-height:30px; 
+    min-width: 120px;	
+	font-family: arial;
+	font-weight:600;
+	color:	#30304c;
+ }
+ 
+ 
